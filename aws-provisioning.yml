@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  aws-provisioning:
+    lang: dockerfile
+    handler: ./aws-provisioning
+    image: kairemor/aws-provisioning-openfaas:latest
+
